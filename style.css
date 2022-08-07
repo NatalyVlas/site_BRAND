@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+}
+
+.text_logo {
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #222222;
+    margin-left: 13px;
+}
+
+.text_logo_D {
+    font-weight: 900;
+    color: #f16d7f;
+    margin-right: 25px;
+}
+
+.header_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: auto;
+    flex-flow: wrap row;
+    margin: 15px auto;
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.button {
+    width: 87px;
+    background-color: #cdcdcc;
+    background-image: linear-gradient(180.0deg, #f9f9f9 0%, #f5f5f5 100%);
+    border: 1px solid #e6e6e6;
+    border-radius: 3px 0px 0px 3px;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 36px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #222222;
+    text-decoration: none;
+
+}
+
+.button:hover {
+    background-image: none;
+    background-color: #f16d7f;
+    color: #ffffff;
+}
+
+.form {
+    width: 317px;
+    height: 38px;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 0px 3px 3px 0px;
+    display: block;
+    outline: none;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #a4a4a4;
+    padding-left: 16px;
+}
+
+.header_right {
+    display: flex;
+    align-items: center;
+}
+
+.header_button {
+    height: 38px;
+    background-color: #f16d7f;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 19px;
+    margin-left: 20px;
+}
+
+.header_button:hover {
+    background-image: linear-gradient(180.0deg, #f9f9f9 0%, #f5f5f5 100%);
+    background-color: #cdcdcc;
+    color: #f16d7f;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.menu {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu-link {
+    text-decoration: none;
+    padding: 20px 25px;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    display: block;
+}
+
+.main {
+    height: 665px;
+    background-color: #e8e8e8;
+    background-image: url(img/main_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 98px;
+}
+
+.banner_logo {
+    float: left;
+    width: 100%;
+    padding-top: 224px;
+}
+
+.line {
+    margin-top: 15px;
+    height: 95px;
+    /* здесь я тупо подогнала, никак не получилось сделать размер, завысящий от текста */
+    float: left;
+    border: 6px solid #f16d7f;
+    background: #f16d7f;
+
+}
+
+.banner_text {
+    font-family: Lato;
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    color: #222222;
+    padding-left: 24px;
+
+}
+
+.banner_text_mini {
+    font-size: 40px;
+    padding-left: 24px;
+}
+
+.banner_text_fashion {
+    color: #f16d7f;
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category_img {
+    width: 100%;
+}
+
+.category_column_left {
+    padding-right: 20px;
+}
+
+.category_column {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.category_item {
+    position: relative;
+    flex-grow: 1;
+}
+
+.category_item_top {
+    padding-bottom: 20px;
+}
+
+
+.category_text {
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #222222;
+    position: absolute;
+    top: 26px;
+    background-color: #ffffff;
+    padding: 16px 19px;
+}
+
+.category_pink {
+    font-size: 30px;
+    color: #f16d7f;
+}
