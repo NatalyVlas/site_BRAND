@@ -13,13 +13,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>THE BRAND</title>
+    <title>Single Page</title>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="top">
-
             <header class=" header">
                 <div class="container">
                     <div class="header_flex">
@@ -214,53 +213,83 @@
                 </nav>
             </header>
 
-            <main>
+            <nav class="breadcrumb">
                 <div class="container">
-                    <div class="banner_logo">
-                        <div class="banner_text">
-                            <p class="the_brand">THE BRAND</p>
-                            <p class="text_fashion">OF LUXERIOUS
-                                <span class="span_fashion">FASHION</span>
-                            </p>
+                    <div class="breadcrumb-block">
+                        <h2 class="breadcrumb-heading">New Arrivals</h2>
+                        <div class="breadcrumb-box">
+                            <a class="breadcrumb-link" href="index.html">HOME</a>
+                            <p>&nbsp;/&nbsp;</p>
+                            <a class="breadcrumb-link" href="#">MEN</a>
+                            <p>&nbsp;/&nbsp;</p>
+                            <a class="breadcrumb-link breadcrumb-link_pink" href="#">New Arrivals</a>
                         </div>
                     </div>
+                </div>
+            </nav>
 
+            <div class="img-slide">
+                <a class="img-slade-link" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                <img class="img-slide-pic" src="img/single_page.png" alt="img">
+                <a class="img-slade-link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+            <section class="product">
+                <div class="container">
+                    <div class="prod-block">
+                        <h3 class="prod-heading">WOMEN COLLECTION</h3>
+                        <p class="prod-name">Moschino Cheap And Chic</p>
+                        <p class="prod-desc">Compellingly actualize fully researched processes before proactive
+                            outsourcing.
+                            Progressively
+                            syndicate collaborative architectures before cutting-edge services. Completely visualize
+                            parallel core competencies rather than exceptional portals.</p>
+                        <div class="prod-box">
+                            <p class="prod-design">MATERIAL: <span class="prod_span">COTTON</span></p>
+                            <p class="prod-design">DESIGNER: <span class="prod_span">BINBURHAN</span></p>
+                        </div>
+                        <p class="prod-price">$561</p>
+                        <div class="choose-box">
+                            CHOOSE COLOR
+                            CHOOSE SIZE
+                            QUANTITY
+
+                            <div class="choose-button">
+                                <a class="choose-link" href="#">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <p class="choose-desc">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-            </main>
-
-            <section class="category container">
-                <div class="category_column category_column_left">
-                    <a href="#" class="category_item category_item_top">
-                        <img class="category_img" src="img/category_man.jpg" alt="man">
-                        <p class="category_text">HOT DEAL<br><span class="category_pink">FOR MEN</span></p>
-                    </a>
-                    <a href="#" class="category_item">
-                        <img class="category_img" src="img/category_accesories.jpg" alt="accesories">
-                        <p class="category_text">LUXIROUS & trendy<br><span class="category_pink">ACCESORIES</span></p>
-                    </a>
-                </div>
-                <div class="category_column">
-                    <a href="#" class="category_item category_item_top">
-                        <img class="category_img" src="img/category_woman.jpg" alt="woman">
-                        <p class="category_text">30% offer<br><span class="category_pink">WOMAN</span></p>
-                    </a>
-                    <a href="#" class="category_item">
-                        <img class="category_img" src="img/category_kids.jpg" alt="kids">
-                        <p class="category_text">NEW ARRIVALS<br><span class="category_pink">FOR KIDS</span></p>
-                    </a>
-                </div>
             </section>
-
-            <section class="item-section">
+            <div class="item-section">
                 <div class="container">
-                    <h2 class="heading">Fetured Items</h2>
-                    <p class="text">Shop for items based on what we featured in this week</p>
-
-                    <div class="card-box">
+                    <h2 class="heading">YOU MAY LIKE ALSO</h2>
+                    <div class="card-box card-box_single_page">
                         <div class="item">
                             <a class="item-link" href="#">
-                                <img class="item-pic" src="img/card_1.jpg" alt="card">
+                                <div class="pic-box">
+                                    <img class="item-pic" src="img/card_9.png" alt="card">
+                                </div>
+                                <div class="text-box">
+                                    <p class="item-desc">BLAZE LEGGINGS</p>
+                                    <p class="item-price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="add-box">
+                                <a class="add" href="#">
+                                    <img class="add-pic" src="img/add_img.png" alt="card">
+                                    <p class="add-desc">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a class="item-link" href="#">
+                                <div class="pic-box">
+                                    <img class="item-pic" src="img/card_10.png" alt="card">
+                                </div>
                                 <div class="text-box">
                                     <p class="item-desc">Mango People T-shirt</p>
                                     <p class="item-price">$52.00</p>
@@ -275,7 +304,9 @@
                         </div>
                         <div class="item">
                             <a class="item-link" href="#">
-                                <img class="item-pic" src="img/card_2.jpg" alt="card">
+                                <div class="pic-box">
+                                    <img class="item-pic" src="img/card_11.png" alt="card">
+                                </div>
                                 <div class="text-box">
                                     <p class="item-desc">Mango People T-shirt</p>
                                     <p class="item-price">$52.00</p>
@@ -290,82 +321,9 @@
                         </div>
                         <div class="item">
                             <a class="item-link" href="#">
-                                <img class="item-pic" src="img/card_3.jpg" alt="card">
-                                <div class="text-box">
-                                    <p class="item-desc">Mango People T-shirt</p>
-                                    <p class="item-price">$52.00</p>
+                                <div class="pic-box">
+                                    <img class="item-pic" src="img/card_12.png" alt="card">
                                 </div>
-                            </a>
-                            <div class="add-box">
-                                <a class="add" href="#">
-                                    <img class="add-pic" src="img/add_img.png" alt="card">
-                                    <p class="add-desc">Add to Cart</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a class="item-link" href="#">
-                                <img class="item-pic" src="img/card_4.jpg" alt="card">
-                                <div class="text-box">
-                                    <p class="item-desc">Mango People T-shirt</p>
-                                    <p class="item-price">$52.00</p>
-                                </div>
-                            </a>
-                            <div class="add-box">
-                                <a class="add" href="#">
-                                    <img class="add-pic" src="img/add_img.png" alt="card">
-                                    <p class="add-desc">Add to Cart</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a class="item-link" href="#">
-                                <img class="item-pic" src="img/card_5.jpg" alt="card">
-                                <div class="text-box">
-                                    <p class="item-desc">Mango People T-shirt</p>
-                                    <p class="item-price">$52.00</p>
-                                </div>
-                            </a>
-                            <div class="add-box">
-                                <a class="add" href="#">
-                                    <img class="add-pic" src="img/add_img.png" alt="card">
-                                    <p class="add-desc">Add to Cart</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a class="item-link" href="#">
-                                <img class="item-pic" src="img/card_6.jpg" alt="card">
-                                <div class="text-box">
-                                    <p class="item-desc">Mango People T-shirt</p>
-                                    <p class="item-price">$52.00</p>
-                                </div>
-                            </a>
-                            <div class="add-box">
-                                <a class="add" href="#">
-                                    <img class="add-pic" src="img/add_img.png" alt="card">
-                                    <p class="add-desc">Add to Cart</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a class="item-link" href="#">
-                                <img class="item-pic" src="img/card_7.jpg" alt="card">
-                                <div class="text-box">
-                                    <p class="item-desc">Mango People T-shirt</p>
-                                    <p class="item-price">$52.00</p>
-                                </div>
-                            </a>
-                            <div class="add-box">
-                                <a class="add" href="#">
-                                    <img class="add-pic" src="img/add_img.png" alt="card">
-                                    <p class="add-desc">Add to Cart</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a class="item-link" href="#">
-                                <img class="item-pic" src="img/card_8.jpg" alt="card">
                                 <div class="text-box">
                                     <p class="item-desc">Mango People T-shirt</p>
                                     <p class="item-price">$52.00</p>
@@ -379,52 +337,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item-button-box">
-                        <a href="#" class="item_button">Browse All Product</a>
-                    </div>
-                </div>
-            </section>
-
-            <div class="banner">
-                <div class="container">
-                    <div class="banner_flex">
-                        <a href="#" class="banner_left">
-                            <img class="banner_img" src="img/banner_1.jpg" alt="img">
-                            <p class="banner_left_text">30% <span class="banner_text_pink">OFFER</span><br>
-                                <span class="banner_text_mi"></span>FOR WOMEN
-                            </p>
-                        </a>
-                        <div class="banner_right">
-                            <div class="banner_feature_box">
-                                <img class="banner_img" src="img/banner_2.png" alt="img">
-                                <article class="banner_arc">
-                                    <h4 class="banner_heading">Free Delivery</h4>
-                                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with
-                                        extensive
-                                        models.</p>
-                                </article>
-                            </div>
-                            <div class="banner_feature_box">
-                                <img class="banner_img" src="img/banner_3.png" alt="img">
-                                <article class="banner_arc">
-                                    <h4 class="banner_heading">Sales & discounts</h4>
-                                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with
-                                        extensive
-                                        models.</p>
-                                </article>
-                            </div>
-                            <div class="banner_feature_box">
-                                <img class="banner_img" src="img/banner_4.png" alt="img">
-                                <article class="banner_arc">
-                                    <h4 class="banner_heading">Quality assurance</h4>
-                                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with
-                                        extensive
-                                        models.</p>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
