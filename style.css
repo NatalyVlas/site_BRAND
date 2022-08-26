@@ -27,6 +27,7 @@
   background-color: #ffffff;
   border: 1px solid #ececec;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+
 }
 
 @-webkit-keyframes roll-in-blurred-left {
@@ -77,6 +78,7 @@
 .logo-img {
   -webkit-animation: roll-in-blurred-left 0.65s cubic-bezier(0.23, 1, 0.32, 1) 1s both;
           animation: roll-in-blurred-left 0.65s cubic-bezier(0.23, 1, 0.32, 1) 1s both;
+
 }
 
 .text_logo {
@@ -563,6 +565,7 @@ fieldset {
   background-color: #ffffff;
   border: 1px solid #eaeaea;
   margin-top: 38px;
+
   transition: background-color 0.5s, color 0.5s;
 }
 .check-box__button_s {
@@ -574,6 +577,7 @@ fieldset {
 .check-box__button:hover {
   background-color: #4a4a4a;
   color: #ffffff;
+
 }
 
 .check-box__button-log {
@@ -786,6 +790,7 @@ footer {
 
 .fa-brands:hover {
   color: #f16d7f;
+
 }
 
 .shop-form {
@@ -979,6 +984,7 @@ footer {
 .a-card_hover:hover {
   transform: scale(1.2, 1.2);
   filter: brightness(90%);
+
 }
 
 .navbar {
@@ -1294,6 +1300,90 @@ main {
   margin-left: 10px;
 }
 
+
+}
+
+.item-link {
+  display: block;
+  text-decoration: none;
+}
+
+.pic-box {
+  background-color: #e9e9e9;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.item-pic {
+  height: 280px;
+}
+
+.text-box {
+  padding: 15px;
+}
+
+.item-desc {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 17px;
+}
+
+.item-price {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f16d7f;
+}
+
+.item:hover {
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.item:hover .item-pic {
+  filter: brightness(30%);
+}
+
+.item:hover .pic-box {
+  filter: brightness(30%);
+}
+
+.add-box {
+  display: none;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 98px;
+  margin-bottom: 0;
+  pointer-events: none;
+  /* << не меняет действие курсора над ним*/
+}
+
+.add {
+  display: flex;
+  padding: 8px;
+  border: 1px solid #fff;
+  align-items: center;
+  text-decoration: none;
+  pointer-events: all;
+  /* << */
+}
+
+.add-desc {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
 .add:hover {
   box-shadow: 0px 0px 8px 0px #fff;
 }
@@ -1324,9 +1414,11 @@ main {
   border-radius: 3px;
   transition: background-color 0.5s, color 0.5s;
 }
+
 .item_button_100 {
   width: 100%;
 }
+
 
 .item_button:hover {
   background-color: #ffffff;

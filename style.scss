@@ -27,8 +27,8 @@
 @import "product";
 @import "checkout";
 @import "footer";
-@import "shopping_cart";
 
+@import "shopping_cart";
 
 .navbar {
     width: 100%;
@@ -378,9 +378,11 @@ main {
     border-radius: 3px;
     transition: background-color 0.5s, color 0.5s;
 
+
     &_100 {
         width: 100%;
     }
+
 }
 
 .item_button:hover {
