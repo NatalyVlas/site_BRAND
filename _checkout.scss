@@ -1,0 +1,144 @@
+.checkout {
+    margin-top: 57px;
+    margin-bottom: 93px;
+}
+
+.check-block {
+    padding-left: 5px;
+
+}
+
+.c-text {
+    font-family: $site_ff;
+    line-height: 1.2;
+    color: #222222;
+}
+
+.check-span {
+    font-family: $site_ff;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ff0d0d;
+    text-transform: none;
+
+}
+
+.check-list {
+    border-bottom: 1PX solid #e8e8e8;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &__c-text {
+        &_big {
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.check-box {
+    display: flex;
+    padding: 39px 35px 47px 35px;
+
+    &__c-text {
+        margin-bottom: 15px;
+
+        &_small_13 {
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+        &_small_12 {
+            font-size: 12px;
+        }
+
+        &_small_14 {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        &_thin {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #b3b2b2;
+            text-transform: none;
+        }
+    }
+
+}
+
+.check-form_left {
+    width: 48%;
+}
+
+.check-form_right {
+    width: 48%;
+
+    &__c-text {
+        margin-top: 27px;
+    }
+
+}
+
+.mb {
+    margin-bottom: 27px;
+}
+
+.check-guest {
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+
+.check-reg {
+    margin-bottom: 33px;
+}
+
+.check-list-reg {
+    list-style-type: none;
+
+    &_m {
+        margin-top: 33px;
+    }
+
+    &_s {
+        margin-top: 15px;
+    }
+}
+
+.check-list-reg::before {
+    content: "\00BB";
+    font-size: 13px;
+    padding-right: 4px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #b3b2b2;
+}
+
+.check-box__button {
+    font-family: $site_ff;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    padding: 19px 53px 19px 53px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    margin-top: 38px;
+}
+
+.check-box__button-log {
+    margin-right: 32px;
+}
+
+.check-email {
+    width: 390px;
+    height: 45px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    margin-top: 16px;
+    margin-bottom: 23px;
+}
