@@ -5,7 +5,23 @@
 
 .check-block {
     padding-left: 5px;
+}
 
+.checkout__summary {
+    text-decoration: none;
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.checkout__summary::-webkit-details-marker {
+    display: none;
+}
+
+.checkout__summary::after {
+    content: "";
 }
 
 .c-text {
@@ -57,6 +73,7 @@
         &_small_14 {
             font-size: 14px;
             font-weight: 400;
+            text-transform: none;
         }
 
         &_thin {
@@ -128,12 +145,23 @@
     background-color: #ffffff;
     border: 1px solid #eaeaea;
     margin-top: 38px;
+
+    text-decoration: none;
     transition: background-color 0.5s, color 0.5s;
+
+    &_block {
+        display: block;
+    }
 
     &_s {
         padding: 12px 15px 12px 15px;
         font-size: 14px;
         margin-top: 0;
+    }
+
+    &_top {
+        margin-top: 11px;
+        width: 100%;
     }
 }
 
@@ -153,4 +181,6 @@
     border: 1px solid #eaeaea;
     margin-top: 16px;
     margin-bottom: 23px;
+    padding-left: 10px;
+    padding-right: 10px;
 }

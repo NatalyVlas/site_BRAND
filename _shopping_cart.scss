@@ -1,6 +1,13 @@
 .shop-form {
     margin-top: 90px;
-    margin-bottom: 79px;
+
+    &_bott {
+        margin-top: 63px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin-bottom: 79px;
+    }
 }
 
 .shop-product {
@@ -121,12 +128,6 @@
     justify-content: space-between;
 }
 
-.shop-reg {
-    margin-top: 63px;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-}
 
 .shop-adress {
     width: 32%;

@@ -1,10 +1,16 @@
-footer {
+.footer {
     width: 100%;
-    background-color: rgba(242, 242, 242, 0.5);
-    background-image: url(img/subscription.jpg);
+}
+
+.footer_sub {
+    background-image: url(img/footer.jpg);
+    background-position: bottom;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+}
+
+.bg-color {
+    background-color: rgba(242, 242, 242, 0.5);
 }
 
 .sub_flex {
@@ -12,6 +18,7 @@ footer {
     justify-content: space-between;
     padding: 111px 0 156px 0;
     align-items: center;
+
 }
 
 .review {
@@ -101,6 +108,7 @@ footer {
     color: #222224;
     border: 1px solid #e1e1e1;
     padding-left: 28px;
+    padding-right: 10px;
 }
 
 .sub_button {

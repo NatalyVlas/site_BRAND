@@ -19,6 +19,7 @@
 <body>
     <div class="wrapper">
         <div class="top">
+
             <header class=" header">
                 <div class="container">
                     <div class="header_flex">
@@ -26,7 +27,33 @@
                             <a href="index.html"><img class="logo-img" src="img/logo.jpg" alt="logo"></a>
                             <a href="index.html" class="text_logo">BRAN<span class="text_logo_D">D</span></a>
                             <div class="search">
-                                <div class="button-box">
+                                <!-- <details class="search__details">
+                                    <summary class="search__summary">Browse</summary>
+                                    <div class="mega_item">
+                                        <h3 class="mega_heading">Women</h3>
+                                        <a class="mega_link" href="#">Dresses</a>
+                                        <a class="mega_link" href="#">Tops</a>
+                                        <a class="mega_link" href="#">Sweaters/Knits</a>
+                                        <a class="mega_link" href="#">Jackets/Coats</a>
+                                        <a class="mega_link" href="#">Blazers</a>
+                                        <a class="mega_link" href="#">Denim</a>
+                                        <a class="mega_link" href="#">Leggings/Pants</a>
+                                        <a class="mega_link" href="#">Skirts/Shorts</a>
+                                        <a class="mega_link" href="#">Accessories</a>
+                                    </div>
+                                    <div class="mega_item">
+                                        <h3 class="mega_heading">Men</h3>
+                                        <a class="mega_link" href="#">Tees/Tank tops</a>
+                                        <a class="mega_link" href="#">Shirts/Polos</a>
+                                        <a class="mega_link" href="#">Sweaters</a>
+                                        <a class="mega_link" href="#">Sweatshirts/Hoodies</a>
+                                        <a class="mega_link" href="#">Blazers</a>
+                                        <a class="mega_link" href="#">Jackets/vests</a>
+                                    </div>
+
+                                </details> -->
+
+                                <nav class="button-box">
                                     <a href="#" class="button">Browse <i class="fas fa-caret-down"></i></a>
                                     <div class="drop-box">
                                         <div class="mega_item">
@@ -51,14 +78,61 @@
                                             <a class="mega_link" href="#">Jackets/vests</a>
                                         </div>
                                     </div>
-                                </div>
-                                <input class="form" type="text" placeholder=" Search for Item...">
-                                <button type="submit" class="search-form"><i class=" fa fa-search"
-                                        aria-hidden="true"></i></button>
+                                </nav>
+                                <form action="#" class="search__form">
+                                    <input class="form" type="text" placeholder=" Search for Item...">
+                                    <button type="submit" class="search-form"><i class=" fa fa-search"
+                                            aria-hidden="true"></i></button>
+                                </form>
                             </div>
                         </div>
                         <div class="header_right">
-                            <a href="shopping_cart.html"><img src="img/forma_1_1113.png" alt="bascet"></a>
+                            <div class="shopping-box">
+                                <a href="shopping_cart.html" class="cart-link"><img src="img/forma_1_1113.png"
+                                        alt="cart"></a>
+                                <div class="cart-box">
+                                    <div class="cart_item">
+                                        <a href="single_page.html" class="cart-img"><img src="img/cart1.png"
+                                                alt="img"></a>
+                                        <div class="cart-prod">
+                                            <p class="cart-name">Rebox Zane</p>
+                                            <div class="stars">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="cart-price">1 x $250</p>
+                                        </div>
+                                        <p class="cart-x"><i class="fa fa-times-circle" aria-hidden="true"></i></p>
+                                    </div>
+                                    <div class="cart_item cart_item_top">
+                                        <a href="single_page.html" class="cart-img"><img src="img/cart2.png"
+                                                alt="img"></a>
+                                        <div class="cart-prod">
+                                            <p class="cart-name">Rebox Zane</p>
+                                            <div class="stars">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="cart-price">1 x $250</p>
+                                        </div>
+                                        <p class="cart-x"><i class="fa fa-times-circle" aria-hidden="true"></i></p>
+                                    </div>
+                                    <div class="cart-total">
+                                        <p class="total-text">TOTAL</p>
+                                        <p class="total-text">$500.00</p>
+                                    </div>
+                                    <a href="checkout.html" class="item_button item_button_100">Checkout</a>
+                                    <a href="shopping_cart.html"
+                                        class="check-box__button check-box__button_block check-box__button_top">Go to
+                                        cart</a>
+                                </div>
+                            </div>
                             <a href="checkout.html" class="header_button">My Account</a>
                         </div>
                     </div>
@@ -227,6 +301,7 @@
                     </div>
                 </div>
             </nav>
+
             <section class="shopping-cart">
                 <div class="container">
                     <form action="#" class="shop-form">
@@ -254,8 +329,8 @@
                             <div class="shop-col shop-col_m">
                                 <h3 class="shop-heading shop-heading_l shop-heading_bd">Quantity</h3>
                                 <div class="shop-item shop-item_m">
-                                    <input class="shop-quant" type="number" name="quantity" id="quantity" min="1"
-                                        max="100">
+                                    <input class="shop-quant" type="number" placeholder="1" name="quantity"
+                                        id="quantity" min="1" max="100">
                                 </div>
                             </div>
                             <div class="shop-col shop-col_m">
@@ -299,8 +374,8 @@
                             </div>
                             <div class="shop-col shop-col_m">
                                 <div class="shop-item shop-item_m">
-                                    <input class="shop-quant" type="number" name="quantity" id="quantity" min="1"
-                                        max="100">
+                                    <input class="shop-quant" type="number" placeholder="3" name="quantity"
+                                        id="quantity" min="1" max="100">
                                 </div>
                             </div>
                             <div class="shop-col shop-col_m">
@@ -340,8 +415,8 @@
                             </div>
                             <div class="shop-col shop-col_m">
                                 <div class="shop-item shop-item_m">
-                                    <input class="shop-quant" type="number" name="quantity" id="quantity" min="1"
-                                        max="100">
+                                    <input class="shop-quant" type="number" placeholder="2" name="quantity"
+                                        id="quantity" min="1" max="100">
                                 </div>
                             </div>
                             <div class="shop-col shop-col_m">
@@ -363,71 +438,79 @@
                         </div>
                         <div class="shop-button-box">
                             <button class="check-box__button" type="reset">cLEAR SHOPPING CART</button>
-                            <button class="check-box__button" type="submit">cONTINUE sHOPPING</button>
+                            <a href="product.html" class="check-box__button">cONTINUE sHOPPING</a>
                         </div>
-                        <div class="shop-reg">
-                            <div class="shop-adress">
-                                <h3 class="shop-heading shop-heading_16 shop-heading_left">Shipping Adress</h3>
-                                <input class="shop-input shop-input_mb_betw" id="country" list="dl_country"
-                                    placeholder="Bangladesh">
-                                <datalist id="dl_country">
-                                    <option label="Bangladesh" value="bangladesh"></option>
-                                    <option label="Russia" value="russia"></option>
-                                    <option label="USA" value="usa"></option>
-                                </datalist><br>
-                                <input class="shop-input shop-input_mb_betw" type="text" placeholder="State"><br>
-                                <input class="shop-input shop-input_mb_butt" type="text"
-                                    placeholder="Postcode / Zip"><br>
-                                <button class="check-box__button check-box__button_s" type="submit">get a quote</button>
-                            </div>
-                            <div class="shop-adress">
-                                <h3 class="shop-heading shop-heading_16 shop-heading_left">coupon discount</h3>
-                                <p class="shop-p">Enter your coupon code if you have one</p>
-                                <input class="shop-input shop-input_mb_butt" type="text" placeholder="State">
-                                <button class="check-box__button check-box__button_s" type="submit">Apply
-                                    coupon</button>
-                            </div>
-                            <div class="shop-check">
-                                <p class="shop-p shop-p_s">Sub total<span class="shop-p_span">$900</span></p>
-                                <h3 class="shop-heading shop-check__shop-heading shop-heading_16">GRAND TOTAL<span
-                                        class="shop-check__shop-heading_span">$900</span></h3>
-                                <div class="item-button-box shop-check__item_button">
-                                    <a href="checkout.html" class="item_button item_button_100">PROCEED TO CHECKOUT</a>
-                                </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="shop-reg">
+                <div class="container">
+                    <form action="#" class="shop-form_bott">
+                        <div class="shop-adress">
+                            <h3 class="shop-heading shop-heading_16 shop-heading_left">Shipping Adress</h3>
+                            <input class="shop-input shop-input_mb_betw" id="country" list="dl_country"
+                                placeholder="Bangladesh">
+                            <datalist id="dl_country">
+                                <option label="Bangladesh" value="bangladesh"></option>
+                                <option label="Russia" value="russia"></option>
+                                <option label="USA" value="usa"></option>
+                            </datalist><br>
+                            <input class="shop-input shop-input_mb_betw" type="text" placeholder="State"><br>
+                            <input class="shop-input shop-input_mb_butt" type="text" placeholder="Postcode / Zip"><br>
+                            <button class="check-box__button check-box__button_s" type="submit">get a quote</button>
+                        </div>
+                        <div class="shop-adress">
+                            <h3 class="shop-heading shop-heading_16 shop-heading_left">coupon discount</h3>
+                            <p class="shop-p">Enter your coupon code if you have one</p>
+                            <input class="shop-input shop-input_mb_butt" type="text" placeholder="State">
+                            <button class="check-box__button check-box__button_s" type="submit">Apply
+                                coupon</button>
+                        </div>
+                        <div class="shop-check">
+                            <p class="shop-p shop-p_s">Sub total<span class="shop-p_span">$900</span></p>
+                            <h3 class="shop-heading shop-check__shop-heading shop-heading_16">GRAND TOTAL<span
+                                    class="shop-check__shop-heading_span">$900</span></h3>
+                            <div class="item-button-box shop-check__item_button">
+                                <button class="item_button item_button_100" type="submit">PROCEED TO
+                                    CHECKOUT</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </section>
 
-
-
         </div>
 
-        <footer>
-            <div class="container">
-                <div class="sub_flex">
-                    <figure class="review">
-                        <img class="review_img" src="img/review.png" alt="photo">
-                        <figcaption>
-                            <blockquote class="review_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
-                                a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
-                            </blockquote>
-                            <p class="review_name">Bin Burhan</p>
-                            <p class="review_inhab">Dhaka, Bd</p>
-                        </figcaption>
-                    </figure>
-                    <div class="sub_right">
-                        <h3 class="sub_heading">Subscribe</h3>
-                        <p class="sub_text">FOR OUR NEWLETTER AND PROMOTION</p>
-                        <form action="#" class="sub_form">
-                            <input type="email" class="sub_input" placeholder="Enter Your Email" name="" id="">
-                            <button type="submit" class="sub_button">Subscribe</button>
-                        </form>
+        <footer class="footer">
+            <section class="footer_sub">
+                <div class="bg-color">
+                    <div class="container">
+                        <div class="sub_flex">
+                            <figure class="review">
+                                <img class="review_img" src="img/review.png" alt="photo">
+                                <figcaption>
+                                    <blockquote class="review_text">“Vestibulum quis porttitor dui! Quisque viverra nunc
+                                        mi,
+                                        a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                                    </blockquote>
+                                    <p class="review_name">Bin Burhan</p>
+                                    <p class="review_inhab">Dhaka, Bd</p>
+                                </figcaption>
+                            </figure>
+                            <div class="sub_right">
+                                <h3 class="sub_heading">Subscribe</h3>
+                                <p class="sub_text">FOR OUR NEWLETTER AND PROMOTION</p>
+                                <form action="#" class="sub_form">
+                                    <input type="email" class="sub_input" placeholder="Enter Your Email" name="" id="">
+                                    <button type="submit" class="sub_button">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer_top">
+            </section>
+            <section class="footer_top">
                 <div class="container">
                     <div class="footer_flex">
                         <article class="brand_info">
@@ -446,7 +529,7 @@
 
                         <nav class="footer_item">
                             <h3 class="footer_heading">COMPANY</h3>
-                            <a class="footer_link" href="#">Home</a>
+                            <a class="footer_link" href="index.html">Home</a>
                             <a class="footer_link" href="#">Shop</a>
                             <a class="footer_link" href="#">About</a>
                             <a class="footer_link" href="#">How It Works</a>
@@ -472,14 +555,14 @@
                     </div>
                 </div>
 
-            </div>
+            </section>
             <div class="footer_bottom">
                 <div class="container">
                     <div class="footer_flex_bottom">
                         <div class="footer_bottom_left">
                             <p class="copy">© 2017 Brand All Rights Reserved.</p>
                         </div>
-                        <div class="footer_bottom_right">
+                        <nav class="footer_bottom_right">
                             <a class="footer-link" href="https://vk.com/" target="_blank"><i
                                     class="fa-brands fa-vk"></i></a>
                             <a class="footer-link" href="https://web.telegram.org/" target="_blank"><i
@@ -488,7 +571,7 @@
                                     class="fa-brands fa-square-pinterest"></i></a>
                             <a class="footer-link" href="https://plus.google.com/" target="_blank"><i
                                     class="fa-brands fa-square-google-plus"></i></a>
-                        </div>
+                        </nav>
 
                     </div>
                 </div>

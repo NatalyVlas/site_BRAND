@@ -19,6 +19,7 @@
 <body>
     <div class="wrapper">
         <div class="top">
+
             <header class=" header">
                 <div class="container">
                     <div class="header_flex">
@@ -26,7 +27,33 @@
                             <a href="index.html"><img class="logo-img" src="img/logo.jpg" alt="logo"></a>
                             <a href="index.html" class="text_logo">BRAN<span class="text_logo_D">D</span></a>
                             <div class="search">
-                                <div class="button-box">
+                                <!-- <details class="search__details">
+                                    <summary class="search__summary">Browse</summary>
+                                    <div class="mega_item">
+                                        <h3 class="mega_heading">Women</h3>
+                                        <a class="mega_link" href="#">Dresses</a>
+                                        <a class="mega_link" href="#">Tops</a>
+                                        <a class="mega_link" href="#">Sweaters/Knits</a>
+                                        <a class="mega_link" href="#">Jackets/Coats</a>
+                                        <a class="mega_link" href="#">Blazers</a>
+                                        <a class="mega_link" href="#">Denim</a>
+                                        <a class="mega_link" href="#">Leggings/Pants</a>
+                                        <a class="mega_link" href="#">Skirts/Shorts</a>
+                                        <a class="mega_link" href="#">Accessories</a>
+                                    </div>
+                                    <div class="mega_item">
+                                        <h3 class="mega_heading">Men</h3>
+                                        <a class="mega_link" href="#">Tees/Tank tops</a>
+                                        <a class="mega_link" href="#">Shirts/Polos</a>
+                                        <a class="mega_link" href="#">Sweaters</a>
+                                        <a class="mega_link" href="#">Sweatshirts/Hoodies</a>
+                                        <a class="mega_link" href="#">Blazers</a>
+                                        <a class="mega_link" href="#">Jackets/vests</a>
+                                    </div>
+
+                                </details> -->
+
+                                <nav class="button-box">
                                     <a href="#" class="button">Browse <i class="fas fa-caret-down"></i></a>
                                     <div class="drop-box">
                                         <div class="mega_item">
@@ -51,14 +78,61 @@
                                             <a class="mega_link" href="#">Jackets/vests</a>
                                         </div>
                                     </div>
-                                </div>
-                                <input class="form" type="text" placeholder=" Search for Item...">
-                                <button type="submit" class="search-form"><i class=" fa fa-search"
-                                        aria-hidden="true"></i></button>
+                                </nav>
+                                <form action="#" class="search__form">
+                                    <input class="form" type="text" placeholder=" Search for Item...">
+                                    <button type="submit" class="search-form"><i class=" fa fa-search"
+                                            aria-hidden="true"></i></button>
+                                </form>
                             </div>
                         </div>
                         <div class="header_right">
-                            <a href="shopping_cart.html"><img src="img/forma_1_1113.png" alt="bascet"></a>
+                            <div class="shopping-box">
+                                <a href="shopping_cart.html" class="cart-link"><img src="img/forma_1_1113.png"
+                                        alt="cart"></a>
+                                <div class="cart-box">
+                                    <div class="cart_item">
+                                        <a href="single_page.html" class="cart-img"><img src="img/cart1.png"
+                                                alt="img"></a>
+                                        <div class="cart-prod">
+                                            <p class="cart-name">Rebox Zane</p>
+                                            <div class="stars">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="cart-price">1 x $250</p>
+                                        </div>
+                                        <p class="cart-x"><i class="fa fa-times-circle" aria-hidden="true"></i></p>
+                                    </div>
+                                    <div class="cart_item cart_item_top">
+                                        <a href="single_page.html" class="cart-img"><img src="img/cart2.png"
+                                                alt="img"></a>
+                                        <div class="cart-prod">
+                                            <p class="cart-name">Rebox Zane</p>
+                                            <div class="stars">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="cart-price">1 x $250</p>
+                                        </div>
+                                        <p class="cart-x"><i class="fa fa-times-circle" aria-hidden="true"></i></p>
+                                    </div>
+                                    <div class="cart-total">
+                                        <p class="total-text">TOTAL</p>
+                                        <p class="total-text">$500.00</p>
+                                    </div>
+                                    <a href="checkout.html" class="item_button item_button_100">Checkout</a>
+                                    <a href="shopping_cart.html"
+                                        class="check-box__button check-box__button_block check-box__button_top">Go to
+                                        cart</a>
+                                </div>
+                            </div>
                             <a href="checkout.html" class="header_button">My Account</a>
                         </div>
                     </div>
@@ -237,6 +311,8 @@
                 <div class="container">
                     <div class="prod-block">
                         <h3 class="prod-heading">WOMEN COLLECTION</h3>
+                        <div class="line"></div>
+                        <div class="line_pink"></div>
                         <p class="prod-name">Moschino Cheap And Chic</p>
                         <p class="prod-desc">Compellingly actualize fully researched processes before proactive
                             outsourcing.
@@ -248,8 +324,9 @@
                             <p class="prod-design">DESIGNER: <span class="prod_span">BINBURHAN</span></p>
                         </div>
                         <p class="prod-price">$561</p>
-                        <div class="choose-box">
-                            <form class="choose-form" action="#">
+                        <form action="#" class="choose-box">
+
+                            <div class="choose-form">
                                 <div class="chooze-color">
                                     <h3 class="filter-heading">CHOOSE COLOR</h3>
                                     <select class="sort" id="chooze-color">
@@ -268,22 +345,24 @@
                                 </div>
                                 <div class="quantity">
                                     <h3 class="filter-heading">QUANTITY</h3>
-                                    <input class="sort" id="quantity" type="number" required="" min="1" max="100">
+                                    <input class="sort" id="quantity" type="number" placeholder="1" required="" min="1"
+                                        max="100">
                                 </div>
-                            </form>
+                            </div>
 
                             <div class="choose-button">
-                                <a class="choose-link" href="#">
+                                <button type="submit" class="choose-link">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                     <p class="choose-desc">Add to Cart</p>
-                                </a>
+                                </button>
+
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
 
             </section>
-            <div class="item-section">
+            <section class="item-section">
                 <div class="container">
                     <h2 class="heading">YOU MAY LIKE ALSO</h2>
                     <div class="card-box card-box_single_page">
@@ -357,33 +436,38 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
 
-        <footer>
-            <div class="container">
-                <div class="sub_flex">
-                    <figure class="review">
-                        <img class="review_img" src="img/review.png" alt="photo">
-                        <figcaption>
-                            <blockquote class="review_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
-                                a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
-                            </blockquote>
-                            <p class="review_name">Bin Burhan</p>
-                            <p class="review_inhab">Dhaka, Bd</p>
-                        </figcaption>
-                    </figure>
-                    <div class="sub_right">
-                        <h3 class="sub_heading">Subscribe</h3>
-                        <p class="sub_text">FOR OUR NEWLETTER AND PROMOTION</p>
-                        <form action="#" class="sub_form">
-                            <input type="email" class="sub_input" placeholder="Enter Your Email" name="" id="">
-                            <button type="submit" class="sub_button">Subscribe</button>
-                        </form>
+        <footer class="footer">
+            <section class="footer_sub">
+                <div class="bg-color">
+                    <div class="container">
+                        <div class="sub_flex">
+                            <figure class="review">
+                                <img class="review_img" src="img/review.png" alt="photo">
+                                <figcaption>
+                                    <blockquote class="review_text">“Vestibulum quis porttitor dui! Quisque viverra nunc
+                                        mi,
+                                        a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                                    </blockquote>
+                                    <p class="review_name">Bin Burhan</p>
+                                    <p class="review_inhab">Dhaka, Bd</p>
+                                </figcaption>
+                            </figure>
+                            <div class="sub_right">
+                                <h3 class="sub_heading">Subscribe</h3>
+                                <p class="sub_text">FOR OUR NEWLETTER AND PROMOTION</p>
+                                <form action="#" class="sub_form">
+                                    <input type="email" class="sub_input" placeholder="Enter Your Email" name="" id="">
+                                    <button type="submit" class="sub_button">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer_top">
+            </section>
+            <section class="footer_top">
                 <div class="container">
                     <div class="footer_flex">
                         <article class="brand_info">
@@ -402,7 +486,7 @@
 
                         <nav class="footer_item">
                             <h3 class="footer_heading">COMPANY</h3>
-                            <a class="footer_link" href="#">Home</a>
+                            <a class="footer_link" href="index.html">Home</a>
                             <a class="footer_link" href="#">Shop</a>
                             <a class="footer_link" href="#">About</a>
                             <a class="footer_link" href="#">How It Works</a>
@@ -428,14 +512,14 @@
                     </div>
                 </div>
 
-            </div>
+            </section>
             <div class="footer_bottom">
                 <div class="container">
                     <div class="footer_flex_bottom">
                         <div class="footer_bottom_left">
                             <p class="copy">© 2017 Brand All Rights Reserved.</p>
                         </div>
-                        <div class="footer_bottom_right">
+                        <nav class="footer_bottom_right">
                             <a class="footer-link" href="https://vk.com/" target="_blank"><i
                                     class="fa-brands fa-vk"></i></a>
                             <a class="footer-link" href="https://web.telegram.org/" target="_blank"><i
@@ -444,7 +528,7 @@
                                     class="fa-brands fa-square-pinterest"></i></a>
                             <a class="footer-link" href="https://plus.google.com/" target="_blank"><i
                                     class="fa-brands fa-square-google-plus"></i></a>
-                        </div>
+                        </nav>
 
                     </div>
                 </div>

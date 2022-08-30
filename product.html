@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5e9d0303da.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
@@ -29,7 +30,33 @@
                             <a href="index.html"><img class="logo-img" src="img/logo.jpg" alt="logo"></a>
                             <a href="index.html" class="text_logo">BRAN<span class="text_logo_D">D</span></a>
                             <div class="search">
-                                <div class="button-box">
+                                <!-- <details class="search__details">
+                                    <summary class="search__summary">Browse</summary>
+                                    <div class="mega_item">
+                                        <h3 class="mega_heading">Women</h3>
+                                        <a class="mega_link" href="#">Dresses</a>
+                                        <a class="mega_link" href="#">Tops</a>
+                                        <a class="mega_link" href="#">Sweaters/Knits</a>
+                                        <a class="mega_link" href="#">Jackets/Coats</a>
+                                        <a class="mega_link" href="#">Blazers</a>
+                                        <a class="mega_link" href="#">Denim</a>
+                                        <a class="mega_link" href="#">Leggings/Pants</a>
+                                        <a class="mega_link" href="#">Skirts/Shorts</a>
+                                        <a class="mega_link" href="#">Accessories</a>
+                                    </div>
+                                    <div class="mega_item">
+                                        <h3 class="mega_heading">Men</h3>
+                                        <a class="mega_link" href="#">Tees/Tank tops</a>
+                                        <a class="mega_link" href="#">Shirts/Polos</a>
+                                        <a class="mega_link" href="#">Sweaters</a>
+                                        <a class="mega_link" href="#">Sweatshirts/Hoodies</a>
+                                        <a class="mega_link" href="#">Blazers</a>
+                                        <a class="mega_link" href="#">Jackets/vests</a>
+                                    </div>
+
+                                </details> -->
+
+                                <nav class="button-box">
                                     <a href="#" class="button">Browse <i class="fas fa-caret-down"></i></a>
                                     <div class="drop-box">
                                         <div class="mega_item">
@@ -54,14 +81,61 @@
                                             <a class="mega_link" href="#">Jackets/vests</a>
                                         </div>
                                     </div>
-                                </div>
-                                <input class="form" type="text" placeholder=" Search for Item...">
-                                <button type="submit" class="search-form"><i class=" fa fa-search"
-                                        aria-hidden="true"></i></button>
+                                </nav>
+                                <form action="#" class="search__form">
+                                    <input class="form" type="text" placeholder=" Search for Item...">
+                                    <button type="submit" class="search-form"><i class=" fa fa-search"
+                                            aria-hidden="true"></i></button>
+                                </form>
                             </div>
                         </div>
                         <div class="header_right">
-                            <a href="shopping_cart.html"><img src="img/forma_1_1113.png" alt="bascet"></a>
+                            <div class="shopping-box">
+                                <a href="shopping_cart.html" class="cart-link"><img src="img/forma_1_1113.png"
+                                        alt="cart"></a>
+                                <div class="cart-box">
+                                    <div class="cart_item">
+                                        <a href="single_page.html" class="cart-img"><img src="img/cart1.png"
+                                                alt="img"></a>
+                                        <div class="cart-prod">
+                                            <p class="cart-name">Rebox Zane</p>
+                                            <div class="stars">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="cart-price">1 x $250</p>
+                                        </div>
+                                        <p class="cart-x"><i class="fa fa-times-circle" aria-hidden="true"></i></p>
+                                    </div>
+                                    <div class="cart_item cart_item_top">
+                                        <a href="single_page.html" class="cart-img"><img src="img/cart2.png"
+                                                alt="img"></a>
+                                        <div class="cart-prod">
+                                            <p class="cart-name">Rebox Zane</p>
+                                            <div class="stars">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="cart-price">1 x $250</p>
+                                        </div>
+                                        <p class="cart-x"><i class="fa fa-times-circle" aria-hidden="true"></i></p>
+                                    </div>
+                                    <div class="cart-total">
+                                        <p class="total-text">TOTAL</p>
+                                        <p class="total-text">$500.00</p>
+                                    </div>
+                                    <a href="checkout.html" class="item_button item_button_100">Checkout</a>
+                                    <a href="shopping_cart.html"
+                                        class="check-box__button check-box__button_block check-box__button_top">Go to
+                                        cart</a>
+                                </div>
+                            </div>
                             <a href="checkout.html" class="header_button">My Account</a>
                         </div>
                     </div>
@@ -231,12 +305,12 @@
                 </div>
             </nav>
 
-            <section>
+            <section class="cataloge">
                 <div class="container">
                     <div class="content">
-                        <div class="sidebar">
-                            <details>
-                                <summary>Category</summary>
+                        <nav class="sidebar">
+                            <details class="sidebar-details">
+                                <summary class="sidebar__summary">Category</summary>
                                 <a class="mega_link" href="#">Accessories</a>
                                 <a class="mega_link" href="#">Bags</a>
                                 <a class="mega_link" href="#">Denim</a>
@@ -251,8 +325,8 @@
                                 <a class="mega_link" href="#">T-Shirts</a>
                                 <a class="mega_link" href="#">Tanks</a>
                             </details>
-                            <details>
-                                <summary>BRAND</summary>
+                            <details class="sidebar-details">
+                                <summary class="sidebar__summary">BRAND</summary>
                                 <a class="mega_link" href="#">Accessories</a>
                                 <a class="mega_link" href="#">Bags</a>
                                 <a class="mega_link" href="#">Denim</a>
@@ -260,8 +334,8 @@
                                 <a class="mega_link" href="#">Jackets & Coats</a>
                                 <a class="mega_link" href="#">Pants</a>
                             </details>
-                            <details>
-                                <summary>dESIGNER</summary>
+                            <details class="sidebar-details">
+                                <summary class="sidebar__summary">dESIGNER</summary>
                                 <a class="mega_link" href="#">Shirts</a>
                                 <a class="mega_link" href="#">Shoes</a>
                                 <a class="mega_link" href="#">Shorts</a>
@@ -269,9 +343,9 @@
                                 <a class="mega_link" href="#">T-Shirts</a>
                                 <a class="mega_link" href="#">Tanks</a>
                             </details>
-                        </div>
-                        <div class="product-block">
-                            <div class="top-filter">
+                        </nav>
+                        <section class="product-block">
+                            <form action="#" class="top-filter">
                                 <div class="trend">
                                     <h3 class="filter-heading">Trending now</h3>
                                     <ul class="trend-box">
@@ -306,10 +380,14 @@
                                     </div>
                                 </div>
                                 <div class="price">
-                                    <h3 class="filter-heading">Price</h3>
+                                    <h3 class="filter-heading filter-heading_mb">Price</h3>
                                     <input id="range" type="range" value="52" step="1" min="0" max="700">
+                                    <div class="price-box">
+                                        <p class="size-text">$52</p>
+                                        <p class="size-text">$400</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </form>
                             <form class="select-box" action="#">
                                 <fieldset>
                                     <label class="sort" for="sort">Sort By</label>
@@ -330,7 +408,7 @@
                             </form>
 
 
-                            <div class="card-box">
+                            <section class="card-box">
                                 <div class="item">
                                     <a class="item-link" href="single_page.html">
                                         <img class="item-pic" src="img/prod_1.png" alt="card">
@@ -466,7 +544,7 @@
                                         </a>
                                     </div>
                                 </div>
-                            </div>
+                            </section>
 
                             <div class="product-bottom">
                                 <!-- pagination bootstrap -->
@@ -477,7 +555,7 @@
                                                 <span aria-hidden="true">&laquo;</span>
                                             </a>
                                         </li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link page-link_pink" href="#">1</a></li>
                                         <li class="page-item"><a class="page-link" href="#">2</a></li>
                                         <li class="page-item"><a class="page-link" href="#">3</a></li>
                                         <li class="page-item"><a class="page-link" href="#">4</a></li>
@@ -497,43 +575,42 @@
                                 </div>
                             </div>
 
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <section class="footer_sub">
+            <div class="bg-color">
+                <div class="container">
+                    <div class="sub_flex">
+                        <figure class="review">
+                            <img class="review_img" src="img/review.png" alt="photo">
+                            <figcaption>
+                                <blockquote class="review_text">“Vestibulum quis porttitor dui! Quisque viverra nunc
+                                    mi,
+                                    a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                                </blockquote>
+                                <p class="review_name">Bin Burhan</p>
+                                <p class="review_inhab">Dhaka, Bd</p>
+                            </figcaption>
+                        </figure>
+                        <div class="sub_right">
+                            <h3 class="sub_heading">Subscribe</h3>
+                            <p class="sub_text">FOR OUR NEWLETTER AND PROMOTION</p>
+                            <form action="#" class="sub_form">
+                                <input type="email" class="sub_input" placeholder="Enter Your Email" name="" id="">
+                                <button type="submit" class="sub_button">Subscribe</button>
+                            </form>
                         </div>
                     </div>
                 </div>
-        </div>
-    </div>
-    </section>
-
-
-
-    </div>
-
-
-
-    <footer>
-        <div class="container">
-            <div class="sub_flex">
-                <figure class="review">
-                    <img class="review_img" src="img/review.png" alt="photo">
-                    <figcaption>
-                        <blockquote class="review_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
-                            a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
-                        </blockquote>
-                        <p class="review_name">Bin Burhan</p>
-                        <p class="review_inhab">Dhaka, Bd</p>
-                    </figcaption>
-                </figure>
-                <div class="sub_right">
-                    <h3 class="sub_heading">Subscribe</h3>
-                    <p class="sub_text">FOR OUR NEWLETTER AND PROMOTION</p>
-                    <form action="#" class="sub_form">
-                        <input type="email" class="sub_input" placeholder="Enter Your Email" name="" id="">
-                        <button type="submit" class="sub_button">Subscribe</button>
-                    </form>
-                </div>
             </div>
-        </div>
-        <div class="footer_top">
+        </section>
+        <section class="footer_top">
             <div class="container">
                 <div class="footer_flex">
                     <article class="brand_info">
@@ -552,7 +629,7 @@
 
                     <nav class="footer_item">
                         <h3 class="footer_heading">COMPANY</h3>
-                        <a class="footer_link" href="#">Home</a>
+                        <a class="footer_link" href="index.html">Home</a>
                         <a class="footer_link" href="#">Shop</a>
                         <a class="footer_link" href="#">About</a>
                         <a class="footer_link" href="#">How It Works</a>
@@ -578,14 +655,14 @@
                 </div>
             </div>
 
-        </div>
+        </section>
         <div class="footer_bottom">
             <div class="container">
                 <div class="footer_flex_bottom">
                     <div class="footer_bottom_left">
                         <p class="copy">© 2017 Brand All Rights Reserved.</p>
                     </div>
-                    <div class="footer_bottom_right">
+                    <nav class="footer_bottom_right">
                         <a class="footer-link" href="https://vk.com/" target="_blank"><i
                                 class="fa-brands fa-vk"></i></a>
                         <a class="footer-link" href="https://web.telegram.org/" target="_blank"><i
@@ -594,7 +671,7 @@
                                 class="fa-brands fa-square-pinterest"></i></a>
                         <a class="footer-link" href="https://plus.google.com/" target="_blank"><i
                                 class="fa-brands fa-square-google-plus"></i></a>
-                    </div>
+                    </nav>
 
                 </div>
             </div>

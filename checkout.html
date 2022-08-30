@@ -26,7 +26,33 @@
                             <a href="index.html"><img class="logo-img" src="img/logo.jpg" alt="logo"></a>
                             <a href="index.html" class="text_logo">BRAN<span class="text_logo_D">D</span></a>
                             <div class="search">
-                                <div class="button-box">
+                                <!-- <details class="search__details">
+                                    <summary class="search__summary">Browse</summary>
+                                    <div class="mega_item">
+                                        <h3 class="mega_heading">Women</h3>
+                                        <a class="mega_link" href="#">Dresses</a>
+                                        <a class="mega_link" href="#">Tops</a>
+                                        <a class="mega_link" href="#">Sweaters/Knits</a>
+                                        <a class="mega_link" href="#">Jackets/Coats</a>
+                                        <a class="mega_link" href="#">Blazers</a>
+                                        <a class="mega_link" href="#">Denim</a>
+                                        <a class="mega_link" href="#">Leggings/Pants</a>
+                                        <a class="mega_link" href="#">Skirts/Shorts</a>
+                                        <a class="mega_link" href="#">Accessories</a>
+                                    </div>
+                                    <div class="mega_item">
+                                        <h3 class="mega_heading">Men</h3>
+                                        <a class="mega_link" href="#">Tees/Tank tops</a>
+                                        <a class="mega_link" href="#">Shirts/Polos</a>
+                                        <a class="mega_link" href="#">Sweaters</a>
+                                        <a class="mega_link" href="#">Sweatshirts/Hoodies</a>
+                                        <a class="mega_link" href="#">Blazers</a>
+                                        <a class="mega_link" href="#">Jackets/vests</a>
+                                    </div>
+
+                                </details> -->
+
+                                <nav class="button-box">
                                     <a href="#" class="button">Browse <i class="fas fa-caret-down"></i></a>
                                     <div class="drop-box">
                                         <div class="mega_item">
@@ -51,14 +77,61 @@
                                             <a class="mega_link" href="#">Jackets/vests</a>
                                         </div>
                                     </div>
-                                </div>
-                                <input class="form" type="text" placeholder=" Search for Item...">
-                                <button type="submit" class="search-form"><i class=" fa fa-search"
-                                        aria-hidden="true"></i></button>
+                                </nav>
+                                <form action="#" class="search__form">
+                                    <input class="form" type="text" placeholder=" Search for Item...">
+                                    <button type="submit" class="search-form"><i class=" fa fa-search"
+                                            aria-hidden="true"></i></button>
+                                </form>
                             </div>
                         </div>
                         <div class="header_right">
-                            <a href="shopping_cart.html"><img src="img/forma_1_1113.png" alt="bascet"></a>
+                            <div class="shopping-box">
+                                <a href="shopping_cart.html" class="cart-link"><img src="img/forma_1_1113.png"
+                                        alt="cart"></a>
+                                <div class="cart-box">
+                                    <div class="cart_item">
+                                        <a href="single_page.html" class="cart-img"><img src="img/cart1.png"
+                                                alt="img"></a>
+                                        <div class="cart-prod">
+                                            <p class="cart-name">Rebox Zane</p>
+                                            <div class="stars">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="cart-price">1 x $250</p>
+                                        </div>
+                                        <p class="cart-x"><i class="fa fa-times-circle" aria-hidden="true"></i></p>
+                                    </div>
+                                    <div class="cart_item cart_item_top">
+                                        <a href="single_page.html" class="cart-img"><img src="img/cart2.png"
+                                                alt="img"></a>
+                                        <div class="cart-prod">
+                                            <p class="cart-name">Rebox Zane</p>
+                                            <div class="stars">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="cart-price">1 x $250</p>
+                                        </div>
+                                        <p class="cart-x"><i class="fa fa-times-circle" aria-hidden="true"></i></p>
+                                    </div>
+                                    <div class="cart-total">
+                                        <p class="total-text">TOTAL</p>
+                                        <p class="total-text">$500.00</p>
+                                    </div>
+                                    <a href="checkout.html" class="item_button item_button_100">Checkout</a>
+                                    <a href="shopping_cart.html"
+                                        class="check-box__button check-box__button_block check-box__button_top">Go to
+                                        cart</a>
+                                </div>
+                            </div>
                             <a href="checkout.html" class="header_button">My Account</a>
                         </div>
                     </div>
@@ -231,64 +304,93 @@
             <section class="checkout">
                 <div class="container">
                     <ol class="check-block">
-                        <li class="check-list c-text check-list__c-text_big">Shipping Adress
-                            <div class="check-box">
-                                <form action="#" class="check-form_left">
-                                    <h4 class="c-text check-box__c-text check-box__c-text_small_13">
-                                        Check as a guest or register</h4>
-                                    <p class="c-text check-box__c-text_thin">Register with us
-                                        for future convenience</p>
+                        <li class="check-list c-text check-list__c-text_big">
+                            <details class="checkout-details">
+                                <summary class="checkout__summary c-text check-list__c-text_big">Shipping Adress
+                                </summary>
+                                <div class="check-box">
+                                    <form action="#" class="check-form_left">
+                                        <h4 class="c-text check-box__c-text check-box__c-text_small_13">
+                                            Check as a guest or register</h4>
+                                        <p class="c-text check-box__c-text_thin">Register with us
+                                            for future convenience</p>
 
-                                    <input type="radio" name="register" id="guest" checked class="check-guest">
-                                    <label for="guest" class="c-text check-box__c-text_small_13">checkout as
-                                        guest</label>
-                                    <br>
-                                    <input type="radio" name="register" id="register" class="check-reg">
-                                    <label for="register" class="c-text check-box__c-text_small_13">register</label>
+                                        <input type="radio" name="register" id="guest" checked class="check-guest">
+                                        <label for="guest" class="c-text check-box__c-text_small_13">checkout as
+                                            guest</label>
+                                        <br>
+                                        <input type="radio" name="register" id="register" class="check-reg">
+                                        <label for="register" class="c-text check-box__c-text_small_13">register</label>
 
-                                    <h4 class="c-text check-box__c-text check-box__c-text_small_13">register and save
-                                        time!
-                                    </h4>
-                                    <ul class="c-text check-box__c-text_thin">Register with us for future
-                                        convenience
-                                        <li class="check-list-reg check-list-reg_m">Fast and easy checkout</li>
-                                        <li class="check-list-reg check-list-reg_s">Easy access to your order history
-                                            and status</li>
-                                    </ul>
-                                    <button class="check-box__button" type="submit">Continue</button>
-                                </form>
+                                        <h4 class="c-text check-box__c-text check-box__c-text_small_13">register and
+                                            save
+                                            time!
+                                        </h4>
+                                        <ul class="c-text check-box__c-text_thin">Register with us for future
+                                            convenience
+                                            <li class="check-list-reg check-list-reg_m">Fast and easy checkout</li>
+                                            <li class="check-list-reg check-list-reg_s">Easy access to your order
+                                                history
+                                                and status</li>
+                                        </ul>
+                                        <button class="check-box__button" type="submit">Continue</button>
+                                    </form>
 
-                                <form action="#" class="check-form_right">
-                                    <h4 class="c-text check-box__c-text check-box__c-text_small_13">Already registed?
-                                    </h4>
-                                    <p class="c-text check-box__c-text_thin mb">Please log in below</p>
-                                    <label for="email"
-                                        class="c-text check-form_right__c-text check-box__c-text_small_13">EMAIL
-                                        ADDRESS <span class="check-span">*</span></label>
-                                    <br>
-                                    <input id="email" required class="check-email">
-                                    <br>
-                                    <label for="password" class="c-text check-box__c-text_small_13">PASSWORD
-                                        <span class="check-span">*</span></label>
-                                    <br>
-                                    <input type="password" required class="check-email">
-                                    <br>
-                                    <p><span class="check-span">* Required Fileds</span></p>
-                                    <button id="log" type="submit" class="check-box__button check-box__button-log">Log
-                                        in</button>
-                                    <label for="log" class="c-text check-box__c-text_small_14">Forgot Password ?</label>
-                                </form>
-                            </div>
+                                    <form action="#" class="check-form_right">
+                                        <h4 class="c-text check-box__c-text check-box__c-text_small_13">Already
+                                            registed?
+                                        </h4>
+                                        <p class="c-text check-box__c-text_thin mb">Please log in below</p>
+                                        <label for="email"
+                                            class="c-text check-form_right__c-text check-box__c-text_small_13">EMAIL
+                                            ADDRESS <span class="check-span">*</span></label>
+                                        <br>
+                                        <input id="email" required class="check-email">
+                                        <br>
+                                        <label for="password" class="c-text check-box__c-text_small_13">PASSWORD
+                                            <span class="check-span">*</span></label>
+                                        <br>
+                                        <input type="password" required class="check-email">
+                                        <br>
+                                        <p><span class="check-span">* Required Fileds</span></p>
+                                        <button id="log" type="submit"
+                                            class="check-box__button check-box__button-log">Log
+                                            in</button>
+                                        <label for="log" class="c-text check-box__c-text_small_14">Forgot
+                                            Password?</label>
+                                    </form>
+                                </div>
+                            </details>
                         </li>
-                        <li class="check-list c-text check-list__c-text_big">BILLING INFORMATION
+                        <li class="check-list c-text check-list__c-text_big">
+                            <details class="checkout-details">
+                                <summary class="checkout__summary c-text check-list__c-text_big">BILLING INFORMATION
+                                </summary>
+                            </details>
                         </li>
-                        <li class="check-list c-text check-list__c-text_big">SHIPPING INFORMATION
+                        <li class="check-list c-text check-list__c-text_big">
+                            <details class="checkout-details">
+                                <summary class="checkout__summary c-text check-list__c-text_big">SHIPPING INFORMATION
+                                </summary>
+                            </details>
                         </li>
-                        <li class="check-list c-text check-list__c-text_big">SHIPPING METHOD
+                        <li class="check-list c-text check-list__c-text_big">
+                            <details class="checkout-details">
+                                <summary class="checkout__summary c-text check-list__c-text_big">SHIPPING METHOD
+                                </summary>
+                            </details>
                         </li>
-                        <li class="check-list c-text check-list__c-text_big">PAYMENT METHOD
+                        <li class="check-list c-text check-list__c-text_big">
+                            <details class="checkout-details">
+                                <summary class="checkout__summary c-text check-list__c-text_big">PAYMENT METHOD
+                                </summary>
+                            </details>
                         </li>
-                        <li class="check-list c-text check-list__c-text_big">ORDER REVIEW
+                        <li class="check-list c-text check-list__c-text_big">
+                            <details class="checkout-details">
+                                <summary class="checkout__summary c-text check-list__c-text_big">ORDER REVIEW
+                                </summary>
+                            </details>
                         </li>
                     </ol>
                 </div>
@@ -296,30 +398,35 @@
 
         </div>
 
-        <footer>
-            <div class="container">
-                <div class="sub_flex">
-                    <figure class="review">
-                        <img class="review_img" src="img/review.png" alt="photo">
-                        <figcaption>
-                            <blockquote class="review_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
-                                a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
-                            </blockquote>
-                            <p class="review_name">Bin Burhan</p>
-                            <p class="review_inhab">Dhaka, Bd</p>
-                        </figcaption>
-                    </figure>
-                    <div class="sub_right">
-                        <h3 class="sub_heading">Subscribe</h3>
-                        <p class="sub_text">FOR OUR NEWLETTER AND PROMOTION</p>
-                        <form action="#" class="sub_form">
-                            <input type="email" class="sub_input" placeholder="Enter Your Email" name="" id="">
-                            <button type="submit" class="sub_button">Subscribe</button>
-                        </form>
+        <footer class="footer">
+            <section class="footer_sub">
+                <div class="bg-color">
+                    <div class="container">
+                        <div class="sub_flex">
+                            <figure class="review">
+                                <img class="review_img" src="img/review.png" alt="photo">
+                                <figcaption>
+                                    <blockquote class="review_text">“Vestibulum quis porttitor dui! Quisque viverra nunc
+                                        mi,
+                                        a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                                    </blockquote>
+                                    <p class="review_name">Bin Burhan</p>
+                                    <p class="review_inhab">Dhaka, Bd</p>
+                                </figcaption>
+                            </figure>
+                            <div class="sub_right">
+                                <h3 class="sub_heading">Subscribe</h3>
+                                <p class="sub_text">FOR OUR NEWLETTER AND PROMOTION</p>
+                                <form action="#" class="sub_form">
+                                    <input type="email" class="sub_input" placeholder="Enter Your Email" name="" id="">
+                                    <button type="submit" class="sub_button">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer_top">
+            </section>
+            <section class="footer_top">
                 <div class="container">
                     <div class="footer_flex">
                         <article class="brand_info">
@@ -338,7 +445,7 @@
 
                         <nav class="footer_item">
                             <h3 class="footer_heading">COMPANY</h3>
-                            <a class="footer_link" href="#">Home</a>
+                            <a class="footer_link" href="index.html">Home</a>
                             <a class="footer_link" href="#">Shop</a>
                             <a class="footer_link" href="#">About</a>
                             <a class="footer_link" href="#">How It Works</a>
@@ -364,14 +471,14 @@
                     </div>
                 </div>
 
-            </div>
+            </section>
             <div class="footer_bottom">
                 <div class="container">
                     <div class="footer_flex_bottom">
                         <div class="footer_bottom_left">
                             <p class="copy">© 2017 Brand All Rights Reserved.</p>
                         </div>
-                        <div class="footer_bottom_right">
+                        <nav class="footer_bottom_right">
                             <a class="footer-link" href="https://vk.com/" target="_blank"><i
                                     class="fa-brands fa-vk"></i></a>
                             <a class="footer-link" href="https://web.telegram.org/" target="_blank"><i
@@ -380,7 +487,7 @@
                                     class="fa-brands fa-square-pinterest"></i></a>
                             <a class="footer-link" href="https://plus.google.com/" target="_blank"><i
                                     class="fa-brands fa-square-google-plus"></i></a>
-                        </div>
+                        </nav>
 
                     </div>
                 </div>

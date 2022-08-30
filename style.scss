@@ -142,6 +142,8 @@ main {
     margin-bottom: 98px;
 }
 
+
+
 .banner_logo {
     height: 100%;
 }
@@ -151,6 +153,10 @@ main {
     float: left;
     padding-left: 12px;
     border-left: 12px solid #f16d7f;
+}
+
+h1 {
+    margin: 0 0 !important;
 }
 
 .the_brand {
@@ -177,6 +183,7 @@ main {
 
 .category_img {
     width: 100%;
+
 }
 
 .category_column_left {
@@ -193,6 +200,12 @@ main {
     position: relative;
     flex-grow: 1;
     display: block;
+    transition: transform 0.5s, filter 0.5s;
+}
+
+.category_item:hover {
+    transform: scale(1.03, 1.03);
+    filter: brightness(110%);
 }
 
 .category_item_top {
@@ -261,7 +274,7 @@ main {
     width: 263px;
     position: relative;
     margin-bottom: 40px;
-    transition: all 2s;
+    transition: filter 0.5s;
 }
 
 .item-link {
@@ -274,12 +287,13 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
+    transition: filter 0.5s;
 }
 
 
 .item-pic {
     height: 280px;
-
+    transition: filter 0.5s;
 }
 
 .text-box {
@@ -370,7 +384,7 @@ main {
     letter-spacing: 0.025em;
     color: #ffffff;
     text-decoration: none;
-    width: 212px;
+    min-width: 212px;
     text-align: center;
     padding: 19px 24px;
     border: 1px solid #f16d7f;
@@ -387,6 +401,16 @@ main {
     background-color: #ffffff;
     color: #f16d7f;
     border: 1px solid #f16d7f;
+}
+
+.fa-long-arrow-right {
+    color: #ffffff;
+    margin-left: 9px;
+    transition: color 0.5s;
+}
+
+.item_button:hover .fa-long-arrow-right {
+    color: #f16d7f;
 }
 
 /* секция баннера */
@@ -564,6 +588,21 @@ main {
     color: #f16d7f;
     margin-top: 73px;
     margin-bottom: 15px;
+}
+
+.line {
+    width: 147px;
+    height: 1px;
+    background-color: #eaeaea;
+    margin: 0 auto;
+}
+
+.line_pink {
+    width: 63px;
+    height: 3px;
+    background-color: #f16d7f;
+    margin: 0 auto;
+    transform: translate(0, -2px);
 }
 
 .prod-name {
